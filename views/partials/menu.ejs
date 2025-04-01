@@ -1,0 +1,53 @@
+<div class="container text-center">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+        <div class="container-fluid">
+          <a class="navbar-brand" >Full Sports</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/rest/ropa/findAll/view">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <div class="input-group">
+                        <form class="row g-1" action="/rest/ropa/findAllByRate/view" method="GET">
+                            <div class="col-auto">
+                                <span class="input-group-text">Rango de precio</span>
+                            </div>
+                            <div class="col-auto">
+                                <input class="form-control" type="text" name= "lower" placeholder="Lower" aria-label="default input example">
+                            </div>
+                            <div class="col-auto">
+                                <input class="form-control" type="text" name= "higher" placeholder="Higher" aria-label="default input example">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary" onclick="">Buscar</button>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="input-group">
+                        <form class="row g-1" action="/rest/ropa/findAllById/view" method="GET">
+                            <div class="col-auto">
+                                <span class="input-group-text">Buscar por ID</span>
+                            </div>
+                            <div class="col-auto">
+                                <input class="form-control" type="text" name= "ID" placeholder="ID" aria-label="default input example">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary" onclick="">Buscar</button>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</div>
